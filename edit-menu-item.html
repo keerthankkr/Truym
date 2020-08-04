@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Edit Menu Items</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<script type="text/javascript" src="js/valid.js"></script>
+</head>
+<body>
+	<header>
+		<span id="title">truYum</span>
+		<img src="images/dark.jpg" title="spoon and fork" id="ph">
+		<a href="menu-item-list-admin.html" class="nav-menu">Menu</a>
+	</header>
+	<div id="content">
+		<h1 id="head">Edit Menu item</h1>
+		<table>
+			<tr>
+				<th colspan="4">Name</th>
+			</tr>
+			<tr>
+				<td colspan="4"><input type="text" name="itemname" id="itemname"></td>
+			</tr>
+			<tr>
+				<th>Price(Rs.)</th>
+				<th>Active</th>
+				<th>Date of Launch</th>
+				<th>Category</th>
+			</tr>
+			<tr>
+				<td><input type="text" name="amount" id="amount"></td>
+				<td><input type="radio" name="active" id="activeyes" checked>Yes
+					<input type="radio" name="active" id="activeno" >No</td>
+				<td><input type="text" name="date" id="date"></td>
+				<td><select name="opt">
+					<option value="Starters" id="starters">Starters</option>
+					<option value="Main Course" id="maincourse">Main Course</option>
+					<option value="Dessert" id="dessert">Dessert</option>
+					<option value="Drinks" id="drinks">Drinks</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td colspan="4"><input type="checkbox" name="delivery" id="delivery">Free Delivery</td>
+			</tr>
+			<tr>
+				<td colspan="4"><input type="button" id="save" value="Save" onclick="validate() "></td>
+			</tr>
+		</table>
+	</div>
+	<footer>
+		Copyright @ 2019
+	</footer>
+</body>
+</html>
